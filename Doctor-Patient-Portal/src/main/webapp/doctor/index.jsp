@@ -57,9 +57,6 @@
 		DoctorDAO docDAO = new DoctorDAO(DBConnection.getConn());
 		int totalNumberOfDoctor = docDAO.countTotalDoctor();
 		
-		//get current login doctor object from session
-		Doctor currentLoginDoctor = (Doctor)session.getAttribute("doctorObj");
-		
 		
 		%>
 
